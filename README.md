@@ -113,8 +113,8 @@ If the determinant is zero, the matrix has no inverse.
 
 ## Author
 Author
-Svanik M - GitHub Profile
-(A beginner C programming project created to practice matrix operations and fundamental programming concepts.)
+Svanik M - https://github.com/svanik-m
+A beginner C programming project created to practice matrix operations and fundamental programming concepts.
 
 ## License
 
