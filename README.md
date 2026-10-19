@@ -112,8 +112,9 @@ If the determinant is zero, the matrix has no inverse.
 - Improve output formatting and error handling.
 
 ## Author
-
-A beginner C programming project created to practice matrix operations and fundamental programming concepts.
+Author
+Svanik M - GitHub Profile
+(A beginner C programming project created to practice matrix operations and fundamental programming concepts.)
 
 ## License
 
