@@ -1,36 +1,38 @@
-# Matrix Inverse Calculator in C
+# Matrix Inverse Calculator
 
-A simple menu-driven C program that calculates the inverse of a **2×2 or 3×3 matrix** using the determinant and adjugate methods.
+A menu-driven program written in C to calculate the inverse of 2x2 and 3x3 matrices using determinants and adjugate matrices.
 
 ## Features
 
-- Calculate the inverse of a 2×2 matrix.
-- Calculate the inverse of a 3×3 matrix.
+- Calculate the inverse of a 2x2 matrix.
+- Calculate the inverse of a 3x3 matrix.
 - Calculate and display the determinant.
 - Display the original matrix.
 - Display the adjugate matrix.
-- Display the inverse matrix with decimal precision.
-- Detect singular matrices whose determinant is zero and report that an inverse does not exist.
-- Interactive menu for selecting the matrix size.
+- Display the inverse matrix with two decimal places.
+- Detect matrices whose determinant is zero and report that the inverse does not exist.
 
-## Concepts Used
+## Technologies Used
 
-This project demonstrates the use of:
+- C Programming Language
+- GCC Compiler
 
-- Two-dimensional arrays
+## Concepts Practiced
+
 - Functions
-- `for` loops
-- Conditional statements (`if-else` and `switch`)
+- Two-dimensional arrays
+- Loops
+- Conditional statements
+- Switch statements
 - User input using `scanf()`
-- Matrix operations
-- Determinants and adjugate matrices
+- Matrix determinants and adjugates
 - Floating-point arithmetic
 
 ## How to Compile
 
-Make sure you have a C compiler, such as GCC, installed.
+Make sure GCC is installed on your system.
 
-Open a terminal in the project directory and run:
+Open a terminal in the directory containing `main.c` and run:
 
 ```bash
 gcc main.c -o matrix_inverse
@@ -38,13 +40,13 @@ gcc main.c -o matrix_inverse
 
 ## How to Run
 
-**On Windows (PowerShell):**
+### Windows
 
 ```powershell
 .\matrix_inverse.exe
 ```
 
-**On Linux:**
+### Linux
 
 ```bash
 ./matrix_inverse
@@ -53,57 +55,66 @@ gcc main.c -o matrix_inverse
 ## How to Use
 
 1. Run the program.
-2. Choose `1` to calculate the inverse of a 3×3 matrix or `2` for a 2×2 matrix.
-3. Enter the matrix elements row by row when prompted.
+2. Select the matrix size from the menu.
+3. Enter the matrix elements row by row.
 4. View the original matrix, determinant, adjugate matrix, and inverse matrix.
 
 ## Example
 
-For a 2×2 matrix:
+Consider the following 2x2 matrix:
 
-\[
-A=\begin{bmatrix}4&7\\2&6\end{bmatrix}
-\]
+```text
+4  7
+2  6
+```
 
 The determinant is:
 
-\[
-\det(A)=(4\times6)-(7\times2)=10
-\]
+```text
+det(A) = (4 * 6) - (7 * 2)
+       = 10
+```
 
-The inverse is:
+The inverse matrix is:
 
-\[
-A^{-1}=\begin{bmatrix}0.60&-0.70\\-0.20&0.40\end{bmatrix}
-\]
+```text
+  0.60  -0.70
+ -0.20   0.40
+```
 
 ## Mathematical Formula
 
-For a square matrix \(A\) with a nonzero determinant, its inverse is:
+For a square matrix A with a nonzero determinant, the inverse is calculated using:
 
-\[
-A^{-1}=\frac{\operatorname{adj}(A)}{\det(A)}
-\]
+```text
+A^(-1) = adj(A) / det(A)
+```
 
-If \(\det(A)=0\), the matrix is singular and its inverse does not exist.
+Where:
+
+- `A^(-1)` is the inverse matrix.
+- `adj(A)` is the adjugate matrix.
+- `det(A)` is the determinant of the matrix.
+
+If the determinant is zero, the matrix has no inverse.
 
 ## Limitations
 
-- Supports only 2×2 and 3×3 matrices.
+- Supports only 2x2 and 3x3 matrices.
 - Accepts integer matrix elements.
 - Displays inverse values rounded to two decimal places.
 
 ## Future Improvements
 
 - Add support for larger matrices.
-- Validate user input.
-- Use floating-point input for matrix elements.
-- Improve matrix formatting and error handling.
+- Add input validation.
+- Support decimal matrix elements.
+- Improve output formatting and error handling.
 
 ## Author
 
-Created as a beginner C programming project to practice functions, arrays, loops, and mathematical operations.
+A beginner C programming project created to practice matrix operations and fundamental programming concepts.
 
 ## License
 
-This project is open source. You may use, modify, and improve it for learning purposes.
+This project is available for educational and personal learning purposes.
